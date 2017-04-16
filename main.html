@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MapIt</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>MapIt</h1>
+            <p>Our website will help you calculate the distance traveled for tax purposes while traveling for business.</p>
+            <form class="form-horizontal">
+              <div class="form-group">
+              <label for="from" class="col-xs-2 control-label"> From: </label>
+                <div class="col-xs-10">
+                  <input type="text" id="from" placeholder="Where are you traveling from?" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+              <label for="to" class="col-xs-2 control-label">To: </label>
+                <div class="col-xs-10">
+                  <input type="text" id="to" placeholder="Destination" class="form-control">
+                </div>
+              </div>
+            </form>
+            <div class="col-xs-offset-2 col-xs-10">
+            <button class="btn btn-info btn-lg" onClick="calcRoute();">Submit</button>
+              
+            </div>
+        </div>
+        <div class="container-fluid">
+          <div id="googleMap">
+            
+          </div>
+          <div id="output">
+            
+          </div>
+        </div>
+    </div>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmH8QsBvYkYA580EnbbXmfi_l4QjR22AA&v=3"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
